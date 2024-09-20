@@ -1,16 +1,94 @@
 ---
 title: 'Crear el Backlog del Producto'
 description: >-
-  El Backlog Priorizado del Producto es una lista ordenada de todas las características, funciones, mejoras y correcciones que constituyen los cambios a realizarse en el producto en futuras versiones.
+  El Backlog del Producto es una lista ordenada de todas las características, funciones, mejoras y correcciones que constituyen los cambios a realizarse en el producto en futuras versiones.
 pubDate: 2024-09-19T19:00:00.000Z
-heroImage: ../../assets/images/libros.jpg
+heroImage: ../../assets/images/storypoints.jpg
 category: Inicio de Proyecto
 tags:
   - Inicio de Proyecto
 ---
 
-# ENTRADAS
+Formar un backlog del producto es una de las tareas más importantes al inicio de
+cualquier proyecto Scrum. Es en este punto donde el equipo Scrum, con la ayuda de
+los stakeholders, comienza a identificar las funcionalidades clave del sistema,
+estableciendo su prioridad con base en las necesidades del negocio y los usuarios.
+En el caso del sistema de gestión de inventario de Muebles Jhonny E.I.R.L., el
+backlog será vital para organizar los esfuerzos de desarrollo y garantizar que
+el sistema sea entregado en función de los requisitos más urgentes.
 
-# HERRAMIENTAS
+## ENTRADAS
 
-# SALIDAS
+### Equipo Principal de Scrum
+
+El equipo Scrum está compuesto por:
+
+- **Product Owner**: Alexia Nicoll Asunción Pomazonco.
+- **Scrum Master**: Marjorie Luque Cardenas.
+- **Developers**: Fernando Isai Vegas Villar, Jhony Tenorio Casiano, Daniel Navarro Tantalean.
+
+### Stakeholders
+
+Los stakeholders proporcionan valiosa retroalimentación y validación de las
+funcionalidades que se irán desarrollando. Los stakeholders identificados para
+el proyecto son:
+
+- **Propietario**: Hermogenes Yucra.
+- **Vendedores**: Manuel, Gerson Rodríguez, César, Adelinda.
+- **Trabajadores**: Walter Asunción, Alfonso Asunción, Juan, David.
+- **Clientes y Proveedores**
+- **Consultores de TI**
+
+### Declaración de la Visión del Proyecto
+
+La visión del proyecto es:
+
+> Desarrollar e implementar un software de control de inventario automatizado y
+> centralizado para Muebles Jhonny E.I.R.L., que ofrezca información detallada y
+> analizada en tiempo real, permita la generación de alertas de bajo stock y optimice
+> la toma de decisiones estratégicas. El sistema mejorará la eficiencia operativa,
+> reducirá costos asociados al manejo del inventario y optimizará la planificación
+> de la producción, contribuyendo a que Muebles Jhonny se consolide como líder en
+> la industria de muebles de melamina a nivel nacional.
+
+## HERRAMIENTAS
+
+### Métodos de Priorización de Historias de Usuario
+
+Para priorizar las historias de usuario, el equipo Scrum utilizará el método **MoSCoW**.
+Este método permite clasificar las historias en las siguientes categorías:
+
+- **Must Have** (Imprescindibles): Funcionalidades esenciales.
+- **Should Have** (Importantes): Funcionalidades deseables, pero no críticas.
+- **Could Have** (Opcionales): Funcionalidades que se pueden incluir si hay tiempo.
+- **Won't Have** (Descartadas por ahora): Funcionalidades que no se realizarán en esta iteración.
+
+### Uso de Story Points
+
+Además de MoSCoW, se ha utilizado la técnica de **story points** para estimar el esfuerzo
+requerido para implementar cada historia de usuario. Los story points no se refieren a una
+cantidad de horas específicas, sino a una medida relativa de complejidad y esfuerzo. De
+esta manera, las historias de usuario que son más complejas o requieren más tiempo para
+completarse tendrán un valor mayor de story points. La asignación de estos puntos permite
+una mejor planificación, ya que el equipo puede medir cuánto trabajo es
+capaz de asumir en cada ciclo de desarrollo.
+
+## SALIDAS
+
+### Backlog del Producto
+
+A continuación, se presenta el backlog inicial del sistema de gestión de inventario, priorizado usando MoSCoW:
+
+| ID  | Historia de Usuario                                                           | Prioridad (MoSCoW) | Puntos de Historia | Criterios de Aceptación                                                                 |
+| --- | ----------------------------------------------------------------------------- | ------------------ | ------------------ | --------------------------------------------------------------------------------------- |
+| 1   | Quiero registrar materias primas para poder llevar un control de stock        | Must Have          | 5                  | La materia prima debe poder ser registrada con nombre, código, y cantidad inicial.      |
+| 2   | Quiero recibir alertas de stock mínimo para evitar escasez                    | Must Have          | 3                  | Notificación automática cuando el stock de una materia prima baje del nivel mínimo.     |
+| 3   | Quiero asignar materias primas a productos en proceso                         | Should Have        | 8                  | Posibilidad de asignar cantidades específicas de materia prima a órdenes de producción. |
+| 4   | Quiero ver el historial de movimientos de las materias primas                 | Could Have         | 5                  | Lista detallada de entradas y salidas por fecha y usuario.                              |
+| 5   | Quiero monitorear el estado de los productos en proceso para planificar mejor | Should Have        | 8                  | Vista detallada del estado de cada orden de producción y su progreso.                   |
+| 6   | Quiero generar reportes de stock de materias primas para análisis             | Could Have         | 3                  | Reportes generados en formato PDF o Excel con filtro por fechas y categorías.           |
+| 7   | Quiero configurar roles y permisos para los usuarios                          | Should Have        | 5                  | Capacidad de asignar roles con diferentes niveles de acceso al sistema.                 |
+
+El backlog priorizado será revisado y ajustado conforme se avance en el proyecto,
+permitiendo flexibilidad en la entrega de valor y asegurando que se enfoquen los
+esfuerzos en las funcionalidades más críticas.
