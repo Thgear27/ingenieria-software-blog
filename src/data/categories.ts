@@ -1,7 +1,7 @@
 // List of categories for blog posts
 export const CATEGORIES = [
 	'Inicio de Proyecto',
-	'Category 2',
+	'Sprint 1',
 	'Category 3',
 	'Category 4',
 	'Category 5'
