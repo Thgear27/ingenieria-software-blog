@@ -15,5 +15,5 @@ export const siteConfig: SiteConfig = {
 	lang: 'es-MX',
 	ogLocale: 'en_MX',
 	shareMessage: 'Comparte este post', // Message to share a post on social media
-	paginationSize: 6 // Number of posts per page
+	paginationSize: 100 // Number of posts per page
 }
