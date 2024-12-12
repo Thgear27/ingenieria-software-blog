@@ -3,6 +3,7 @@ export const CATEGORIES = [
 	'Inicio de Proyecto',
 	'Sprint 1',
 	'Sprint 2',
+	'Sprint 3',
 	'Category 3',
 	'Category 4',
 	'Category 5'
