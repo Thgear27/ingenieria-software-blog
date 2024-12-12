@@ -1,16 +1,14 @@
 ---
-title: '11. Estimar tareas'
+title: 11. Estimar tareas'
 description: >-
-  Es crucial para la planificación, la gestión del trabajo y la mejora continua dentro del marco de Scrum, lo que contribuye a la efectividad del equipo y a la entrega de valor al cliente.
+  En este sprint, se definen las tareas que permitirán una gestión eficiente de las reservas, servicios y reclamos, y se estiman los esfuerzos para su implementación utilizando la técnica de Planning Poker.
 pubDate: 2024-10-11T19:00:00.000Z
-heroImage: ../../assets/images/planning_poker.jpeg
-category: Sprint 2
+heroImage: ../../assets/images/estimar_tareas.jpeg
+category: Sprint 3
 tags:
-  - Sprint 2
+  - Sprint 3
   - Estimar tareas
 ---
-
-Este proceso se lleva a cabo durante la planificación del sprint y ayuda a desglosar las historias de usuario en tareas más pequeñas y manejables. Las estimaciones proporcionan una base para la planificación efectiva, permitiendo al equipo establecer expectativas realistas sobre lo que se puede lograr en el tiempo asignado.
 
 ## ENTRADAS
 
@@ -21,73 +19,62 @@ Este proceso se lleva a cabo durante la planificación del sprint y ayuda a desg
 - **Equipo de desarrollo:**
   <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
     <li>Vegas Villar, Fernando</li>
-    <li>Asunción Pomasonco, Alexia Nicoll</li>
+    <li>Asunción Pomasonco, Alexia Nicol</li>
     <li>Navarro Tantalean, Daniel</li>
   </ul>
 
-### Lista de tareas
+### Lista de Tareas
 
-#### Historia 1: Como usuario, quiero registrarme fácilmente a través de un formulario intuitivo o mi cuenta de Google, para agilizar el proceso de creación de cuenta.
-
-#### Tareas:
-- **Tarea 1.1:** Diseñar la interfaz del formulario de registro, incluyendo opciones de registro por correo y Google.
-- **Tarea 1.2:** Configurar la base de datos para almacenar la información de los usuarios de manera segura.
-- **Tarea 1.3:** Implementar la funcionalidad de registro con correo y contraseña, asegurando una experiencia de usuario adecuada.
-- **Tarea 1.4:** Configurar la autenticación con Google utilizando OAuth2 para facilitar el registro de los usuarios que prefieren esta opción.
-
-#### Historia 2: Como usuario, quiero hacer una reserva de cita a través de un enlace directo al chat de Instagram de la empresa, para confirmar rápidamente con la dueña.
+#### Historia 1: Como usuario que gestiona reservas quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para que pueda gestionar de manera eficiente las reservas pendientes y finalizadas.
 
 #### Tareas:
-- **Tarea 2.1:** Crear el diseño de la sección de reserva con un botón de enlace claro que redirija al chat de Instagram.
-- **Tarea 2.2:** Implementar el enlace al chat de Instagram en la página, verificando que la redirección sea rápida y segura.
+- **Tarea 1.1:** Añadir filtro por "pendiente" o "finalizada" en la sección de reservas.
+- **Tarea 1.2:** Añadir botón de "Finalizar" en la sección de reservas (para cambiar el estado de la reserva de "pendiente" a "finalizada").
 
-#### Historia 3: Como dueña, quiero tener un visor de citas para organizar mis servicios de manera eficiente, asimismo podré administrar mis recordatorios.
+#### Historia 2: Como usuario que gestiona reservas quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas, para que pueda encontrar rápidamente las reservas por fecha y navegar eficientemente entre ellas.
 
 #### Tareas:
-- **Tarea 3.1:** Diseñar la interfaz del visor de citas, permitiendo la visualización cada cita.
-- **Tarea 3.2:** Implementar la funcionalidad de administrar mis recordatorios en tiempo real.
+- **Tarea 2.1:** Añadir filtro por día en la sección de reservas.
+- **Tarea 2.2:** Añadir paginación en cada sección que la necesite (como la sección de reservas).
 
-#### Historia 4: Como dueña, quiero poder registrar la reserva de citas de mis clientes y agregar nuevos empleados a mi sistema, porque necesito gestionar eficientemente las citas y expandir el equipo según la demanda.
+#### Historia 3: Como dueña quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas para que pueda controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.
 
-- **Tarea 4.1:** Diseñar la interfaz para el registro de reservas de citas y gestión de empleados.
-- **Tarea 4.2:** Implementar la funcionalidad de registro de citas y empleados en el sistema, permitiendo que los datos se guarden correctamente y sean accesibles.
-- **Tarea 4.3:** Desarrollar la funcionalidad para asignar citas a empleados específicos.
+#### Tareas:
+- **Tarea 3.1:** Agregar CRUD para los servicios y adicionales (añadir, eliminar y editar servicios y adicionales).
+- **Tarea 3.2:** Agregar el precio pendiente por pagar por cada reserva en la sección de próximas reservas.
+
+#### Historia 4: Como dueña quiero poder editar el contenido de la landing page para que pueda actualizar fácilmente la información visible para los usuarios sin necesidad de intervención técnica.
+
+#### Tareas:
+- **Tarea 4.1:** Agregar sección de "Landing" donde se pueda editar contenido puntual de la landing page.
+- **Tarea 4.2:** Agregar módulo para editar texto, imágenes y enlaces en la landing page.
+
+#### Historia 5: Como administrador quiero poder observar las listas de reclamos de nuestros clientes para tener un mejor control de los reclamos posibles.
+
+#### Tareas:
+- **Tarea 5.1:** Agregar sección donde se pueda visualizar los reclamos.
+- **Tarea 5.2:** Notificar sobre el nuevo reclamo vía email al usuario y al administrador.
 
 ## HERRAMIENTAS
 
 ### Criterios de estimación
 
-Utilizaremos la técnica Planning Poker para estimar el esfuerzo en cada tarea.
-La escala de valores será de Fibonacci (1, 2, 3, 5, 8, 13, 21) para medir el esfuerzo relativo.
-
-### Métodos de estimación
-
-**Planning Poker:** Se reúne al equipo para discutir y votar las estimaciones.
-
-<div style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px' }}>
-	<iframe
-		src='https://drive.google.com/file/d/1UW0zH-Dme6SDLS4HhH788zn9XbdiVOjO/preview'
-		width='640'
-		height='360'
-		frameborder='0'
-		allowfullscreen
-	></iframe>
-</div>
+Utilizaremos la técnica **Planning Poker** para estimar el esfuerzo en cada tarea.  
+La escala de valores será de **Fibonacci** (1, 2, 3, 5, 8, 13, 21) para medir el esfuerzo relativo.
 
 ## SALIDAS
 
 ### Effort Estimated Task List
 
-| **Historia**  | **Tarea**                                                                                                                   | **Esfuerzo (Horas)** |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Historia 1    | **Tarea 1.1**: Diseñar la interfaz del formulario de registro, incluyendo opciones de registro por correo y Google.             | 5                    |
-| Historia 1    | **Tarea 1.2**: Configurar la base de datos para almacenar la información de los usuarios de manera segura.                      | 3                    |
-| Historia 1    | **Tarea 1.3**: Implementar la funcionalidad de registro con correo y contraseña, asegurando una experiencia de usuario adecuada. | 5                    |
-| Historia 1    | **Tarea 1.4**: Configurar la autenticación con Google utilizando OAuth2 para facilitar el registro de los usuarios.             | 8                    |
-| Historia 2    | **Tarea 2.1**: Crear el diseño de la sección de reserva con un botón de enlace claro que redirija al chat de Instagram.         | 3                    |
-| Historia 2    | **Tarea 2.2**: Implementar el enlace al chat de Instagram en la página, verificando que la redirección sea rápida y segura.     | 3                    |
-| Historia 3    | **Tarea 3.1**: Diseñar e implementar la interfaz del visor de citas, permitiendo la visualización de cada cita.    | 8                    |
-| Historia 3    | **Tarea 3.2**: Implementar la funcionalidad de administrar mis recordatorios en tiempo real.                     | 8                    |
-| Historia 4    | **Tarea 4.1**: Diseñar la interfaz para el registro de reservas de citas y gestión de empleados.                                | 5                    |
-| Historia 4    | **Tarea 4.2**: Implementar la funcionalidad de registro de citas y empleados en el sistema, permitiendo que los datos se guarden correctamente y sean accesibles. | 8                    |
-| Historia 4    | **Tarea 4.3**: Desarrollar la funcionalidad para asignar citas a empleados específicos.                                         | 8                    |
+| **Historia**  | **Tarea**                                                                                                                       | **Esfuerzo (Horas)** |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Historia 1    | **Tarea 1.1:** Añadir filtro por "pendiente" o "finalizada" en la sección de reservas.                                           | 5                    |
+| Historia 1    | **Tarea 1.2:** Añadir botón de "Finalizar" en la sección de reservas (para cambiar el estado de la reserva de "pendiente" a "finalizada"). | 8                    |
+| Historia 2    | **Tarea 2.1:** Añadir filtro por día en la sección de reservas.                                                                  | 3                    |
+| Historia 2    | **Tarea 2.2:** Añadir paginación en cada sección que la necesite (como la sección de reservas).                                 | 5                    |
+| Historia 3    | **Tarea 3.1:** Agregar CRUD para los servicios y adicionales (añadir, eliminar y editar servicios y adicionales).                | 8                    |
+| Historia 3    | **Tarea 3.2:** Agregar el precio pendiente por pagar por cada reserva en la sección de próximas reservas.                        | 5                    |
+| Historia 4    | **Tarea 4.1:** Agregar sección de "Landing" donde se pueda editar contenido puntual de la landing page.                         | 5                    |
+| Historia 4    | **Tarea 4.2:** Agregar módulo para editar texto, imágenes y enlaces en la landing page.                                          | 8                    |
+| Historia 5    | **Tarea 5.1:** Agregar sección donde se pueda visualizar los reclamos.                                                           | 5                    |
+| Historia 5    | **Tarea 5.2:** Notificar sobre el nuevo reclamo vía email al usuario y al administrador.                                        | 5                    |
