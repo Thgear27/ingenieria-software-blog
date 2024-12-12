@@ -1,7 +1,7 @@
 ---
-title: "PRUEBAS "
+title: "Pruebas"
 description: "En este apartado se veran las pruebas de cada historia"
-heroImage: "../../assets/images/codificacion.jpg"  # Asegúrate de que la imagen exista en esta ruta.
+heroImage: "../../assets/images/prueba.jpg"  # Asegúrate de que la imagen exista en esta ruta.
 category: "Sprint 3"  # Asegúrate de que esta categoría esté permitida en el esquema.
 tags:
   - "codificación"
@@ -165,7 +165,7 @@ pubDate: "2024-12-12T00:00:00Z"  # Fecha en formato ISO 8601.
 
 ---
 
-# Historia de Usuario 5
+###  Historia de Usuario 5
 
 **Número:** HU05  
 **Usuario:** Lienzo Lima  
@@ -271,27 +271,25 @@ Esta funcionalidad debe estar disponible en la primera iteración, y la paginaci
 6. Navegar a la siguiente página de resultados utilizando la paginación.
 7. Verificar que la paginación cargue correctamente las reservas para la siguiente página.
 
-## Resultado esperado:
+### Resultado esperado:
 - El filtro por fecha funciona correctamente, mostrando solo las reservas de la fecha seleccionada.
 - La paginación carga correctamente las reservas de la siguiente página sin errores.
 ## Evaluación de la prueba: 
 La prueba se concluyó satisfactoriamente, ya que el filtro por fecha y la paginación funcionaron correctamente, permitiendo una navegación eficiente y precisa de las reservas. No se detectaron errores en la visualización de las reservas ni en el rendimiento del sistema.
 
 
+## CASO DE PRUEBA NR3: Historia de usuario N° HU03
 
-
-# CASO DE PRUEBA NR3: Historia de usuario N° HU03
-
-## Historia de usuario:
+### Historia de usuario:
 Como dueña, quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas, para que pueda controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.
 
-## Descripción:
+### Descripción:
 Permitir a la dueña gestionar los servicios y adicionales del sistema (añadir, editar y eliminar) y mostrar dinámicamente el precio pendiente por pagar en cada reserva. El sistema debe reflejar correctamente los cambios en los servicios y precios pendientes a medida que se modifican las reservas o se realizan pagos.
 
-## Condiciones de ejecución:
+### Condiciones de ejecución:
 Esta funcionalidad debe estar disponible en esta iteración, con un sistema de base de datos adecuado que maneje correctamente los servicios y precios. Además, los cambios en los servicios deben reflejarse correctamente en el precio pendiente de las reservas.
 
-## Entrada/pasos de ejecución:
+### Entrada/pasos de ejecución:
 1. Iniciar sesión como dueña o administrador con permisos para gestionar servicios.
 2. Navegar a la sección de "Servicios" o "Servicios y Adicionales".
 3. Verificar que los servicios y adicionales existentes se muestren correctamente.
@@ -303,27 +301,27 @@ Esta funcionalidad debe estar disponible en esta iteración, con un sistema de b
 9. Modificar una reserva (por ejemplo, agregar un servicio adicional) y verificar que el precio pendiente se actualice correctamente.
 10. Realizar un pago parcial y verificar que el precio pendiente se reduzca adecuadamente.
 
-## Resultado esperado:
+### Resultado esperado:
 - Los servicios y adicionales se gestionan correctamente: se pueden añadir, editar y eliminar sin errores.
 - El precio pendiente por pagar se muestra correctamente en la sección "Próximas Reservas".
 - Cuando se modifican las reservas (agregando o eliminando servicios), el precio pendiente se actualiza correctamente.
 - Al realizar un pago, el precio pendiente se reduce adecuadamente, reflejando el pago realizado.
 
-## Evaluación de la prueba:
+### Evaluación de la prueba:
 La prueba se concluyó satisfactoriamente, ya que se pudo gestionar correctamente los servicios y adicionales y el precio pendiente por pagar se actualizó de manera dinámica según los cambios realizados en las reservas y pagos. No se detectaron errores en la actualización de precios ni en la gestión de servicios.
 
-# CASO DE PRUEBA NR4: Historia de usuario N° HU04
+## CASO DE PRUEBA NR4: Historia de usuario N° HU04
 
-## Historia de usuario:
+### Historia de usuario:
 Como dueña, quiero poder editar el contenido de la landing page para que pueda actualizar fácilmente la información visible para los usuarios sin necesidad de intervención técnica.
 
-## Descripción:
+### Descripción:
 Permite a la dueña editar fácilmente el contenido de la landing page, incluyendo texto, imágenes y enlaces, sin necesidad de intervención técnica. Los cambios deben reflejarse inmediatamente en la página pública sin afectar el rendimiento del sitio.
 
-## Condiciones de ejecución:
+### Condiciones de ejecución:
 Esta funcionalidad debe estar disponible en el Sprint 3, con una interfaz de usuario fácil de usar para la edición de contenido en la landing page. Los cambios deben reflejarse correctamente en el sitio público.
 
-## Entrada/pasos de ejecución:
+### Entrada/pasos de ejecución:
 1. Iniciar sesión como dueña o usuario con permisos para editar la landing page.
 2. Navegar a la sección de "Landing Page" en el panel de administración.
 3. Verificar que haya opciones para editar diferentes componentes de la landing page, como texto, imágenes y enlaces.
@@ -333,23 +331,23 @@ Esta funcionalidad debe estar disponible en el Sprint 3, con una interfaz de usu
 7. Guardar los cambios realizados y verificar que la landing page se actualice en tiempo real, reflejando correctamente todos los cambios (texto, imagen y enlaces).
 8. Verificar que no haya errores en el rendimiento de la página después de guardar los cambios (la carga de la página debe ser rápida y sin fallos).
 
-## Resultado esperado:
+### Resultado esperado:
 - La dueña puede editar correctamente el texto, las imágenes y los enlaces en la landing page sin intervención técnica.
 - Los cambios realizados en el contenido (texto, imágenes, enlaces) se reflejan inmediatamente en la página pública.
 - Los cambios no afectan el rendimiento del sitio, y la página carga correctamente después de la actualización.
 
-## Evaluación de la prueba:
+### Evaluación de la prueba:
 La prueba se concluyó satisfactoriamente, ya que la dueña pudo editar el contenido de la landing page (texto, imágenes y enlaces) y los cambios se reflejaron correctamente en la página pública en tiempo real. No se detectaron problemas en el rendimiento o en la persistencia de los cambios.
 
-# CASO DE PRUEBA NR5: Historia de usuario N° HU05
+## CASO DE PRUEBA NR5: Historia de usuario N° HU05
 
-## Historia de usuario:
+### Historia de usuario:
 Como administrador, quiero poder observar la lista de reclamos de nuestros clientes para poder tener un mejor control de los reclamos posibles.
 
-## Descripción:
+### Descripción:
 Permitir que el administrador observe una lista de reclamos y reciba notificaciones por correo electrónico sobre nuevos reclamos. Los usuarios también deben ser notificados sobre sus propios reclamos.
 
-## Condiciones de ejecución:
+### Condiciones de ejecución:
 Esta funcionalidad debe estar disponible en el Sprint 3, con una interfaz que permita al administrador ver la lista de reclamos y recibir notificaciones de manera efectiva. Los reclamos deben ser registrados correctamente y las notificaciones deben enviarse a los correos correspondientes.
 
 ## Entrada/pasos de ejecución:
@@ -363,10 +361,10 @@ Esta funcionalidad debe estar disponible en el Sprint 3, con una interfaz que pe
 8. Verificar que el usuario recibe una notificación por correo electrónico confirmando que su reclamo ha sido registrado.
 9. Verificar que las notificaciones de correo electrónico sean enviadas correctamente y contengan la información adecuada sobre el reclamo (cliente, descripción, etc.).
 
-## Resultado esperado:
+### Resultado esperado:
 - El administrador puede ver correctamente la lista de reclamos con todos los detalles relevantes.
 - El administrador recibe notificaciones por correo electrónico de nuevos reclamos, con los detalles completos.
 - Los usuarios reciben notificaciones por correo electrónico confirmando la creación de sus reclamos.
 
-## Evaluación de la prueba:
+### Evaluación de la prueba:
 La prueba se concluyó satisfactoriamente, ya que el administrador pudo ver correctamente la lista de reclamos, recibir notificaciones por correo sobre nuevos reclamos, y los usuarios también recibieron notificaciones adecuadas sobre sus reclamos.
