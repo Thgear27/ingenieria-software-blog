@@ -1,0 +1,88 @@
+---
+title: '11. Estimar tareas'
+description: >-
+  En este sprint, se definen las tareas que permitirán una gestión eficiente de las reservas, servicios y reclamos, y se estiman los esfuerzos para su implementación utilizando la técnica de Planning Poker.
+pubDate: 2024-10-11T19:00:00.000Z
+heroImage: ../../assets/images/planning_poker.jpeg
+category: Sprint 3
+tags:
+  - Sprint 3
+  - Estimar tareas
+---
+
+## ENTRADAS
+
+### Equipo Principal de Scrum
+
+- **Scrum Master:** Luque Cárdenas, Marjorie
+- **Product Owner:** Tenorio Casiano, Jhonny
+- **Equipo de desarrollo:**
+  <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
+  	<li>Vegas Villar, Fernando</li>
+  	<li>Asunción Pomasonco, Alexia Nicoll</li>
+  	<li>Navarro Tantalean, Daniel</li>
+  </ul>
+
+### Lista de Tareas
+
+#### Historia 1: Como usuario que gestiona reservas quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para que pueda gestionar de manera eficiente las reservas pendientes y finalizadas.
+
+#### Tareas:
+
+- **Tarea 1.1:** Añadir filtro por "pendiente" o "finalizada" en la sección de reservas.
+- **Tarea 1.2:** Añadir botón de "Finalizar" en la sección de reservas (para cambiar el estado de la reserva de "pendiente" a "finalizada").
+
+#### Historia 2: Como usuario que gestiona reservas quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas, para que pueda encontrar rápidamente las reservas por fecha y navegar eficientemente entre ellas.
+
+#### Tareas:
+
+- **Tarea 2.1:** Añadir filtro por día en la sección de reservas.
+- **Tarea 2.2:** Añadir paginación en cada sección que la necesite (como la sección de reservas).
+
+#### Historia 3: Como dueña quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas para que pueda controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.
+
+#### Tareas:
+
+- **Tarea 3.1:** Agregar CRUD para los servicios y adicionales (añadir, eliminar y editar servicios y adicionales).
+- **Tarea 3.2:** Agregar el precio pendiente por pagar por cada reserva en la sección de próximas reservas.
+
+#### Historia 4: Como dueña del negocio, quiero que el menú de precios en la landing page muestre automáticamente los servicios y extras desde la base de datos, adaptándose a los cambios, para garantizar información siempre actualizada.
+
+#### Tareas:
+
+- **Tarea 4.1:** Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras.
+- **Tarea 4.2:** Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page.
+
+#### Historia 5: Como administrador quiero poder observar las listas de reclamos de nuestros clientes para tener un mejor control de los reclamos posibles.
+
+#### Tareas:
+
+- **Tarea 5.1:** Agregar sección donde se pueda visualizar los reclamos.
+- **Tarea 5.2:** Notificar sobre el nuevo reclamo vía email al usuario y al administrador.
+
+## HERRAMIENTAS
+
+### Criterios de estimación
+
+Utilizaremos la técnica **Planning Poker** para estimar el esfuerzo en cada tarea.  
+La escala de valores será de **Fibonacci** (1, 2, 3, 5, 8, 13, 21) para medir el esfuerzo relativo.
+
+![planning_poker1](/images/planning_poker.jpeg)
+![planning_poker2](/images/planning_poker2.jpeg)
+
+## SALIDAS
+
+### Effort Estimated Task List
+
+| **Historia** | **Tarea**                                                                                                                                  | **Esfuerzo (Horas)** |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| Historia 1   | **Tarea 1.1:** Añadir filtro por "pendiente" o "finalizada" en la sección de reservas.                                                     | 5                    |
+| Historia 1   | **Tarea 1.2:** Añadir botón de "Finalizar" en la sección de reservas (para cambiar el estado de la reserva de "pendiente" a "finalizada"). | 8                    |
+| Historia 2   | **Tarea 2.1:** Añadir filtro por día en la sección de reservas.                                                                            | 3                    |
+| Historia 2   | **Tarea 2.2:** Añadir paginación en cada sección que la necesite (como la sección de reservas).                                            | 5                    |
+| Historia 3   | **Tarea 3.1:** Agregar CRUD para los servicios y adicionales (añadir, eliminar y editar servicios y adicionales).                          | 8                    |
+| Historia 3   | **Tarea 3.2:** Agregar el precio pendiente por pagar por cada reserva en la sección de próximas reservas.                                  | 5                    |
+| Historia 4   | **Tarea 4.1:** Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras.   | 5                    |
+| Historia 4   | **Tarea 4.2:** Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page.                                        | 8                    |
+| Historia 5   | **Tarea 5.1:** Agregar sección donde se pueda visualizar los reclamos.                                                                     | 5                    |
+| Historia 5   | **Tarea 5.2:** Notificar sobre el nuevo reclamo vía email al usuario y al administrador.                                                   | 5                    |

@@ -1,0 +1,46 @@
+---
+title: '20. Retrospectiva del Sprint 3'
+description: >-
+  En este documento se presenta la retrospectiva del sprint, un proceso clave en la metodología Scrum donde el equipo reflexiona sobre el trabajo realizado durante el sprint anterior. Se evalúan los éxitos, las dificultades encontradas y se identifican oportunidades de mejora. El objetivo es fomentar la autoevaluación y la mejora continua del equipo para optimizar el rendimiento en futuros sprints.
+pubDate: 2024-12-01T20:00:00.000Z
+heroImage: ../../assets/images/retrospectiva.jpg
+category: Sprint 3
+tags:
+  - Sprint 3
+  - Retrospectiva
+---
+
+## Entradas:
+
+- **Equipo Principal de Scrum**
+
+  - **Scrum Master**: Luque Cardenas Marjorie
+  - **Product Owner**: Tenorio Casiano Jhonny
+  - **Equipo de Desarrollo**:
+    - Vegas Villar Fernando
+    - Asuncion Pomasonco Alexia Nicoll
+    - Navarro Tantalean Daniel
+
+- **Herramientas**:
+  - Reunión de retrospectiva del sprint
+
+![Retrospectiva](../../assets/images/priorizado.jpeg)
+
+## Entregables Aceptados
+
+| **Historia de Usuario**                                                                                                                                                                                                                           | **Criterios de Aceptación**                                                                                                                                                                                                                                                                          | **Aceptado** | **Rechazado** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
+| **Historia 1**: Como usuario que gestiona reservas quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para que pueda gestionar de manera eficiente las reservas pendientes y finalizadas.                            | 1. El sistema debe permitir filtrar las reservas por estado (pendiente/terminada) en la sección de reservas. 2. El botón de "Finalizar" debe permitir cambiar el estado de una reserva de "pendiente" a "finalizada", y este cambio debe reflejarse correctamente en la base de datos.               | X            |               |
+| **Historia 2**: Como usuario que gestiona reservas quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas, para que pueda encontrar rápidamente las reservas por fecha y navegar eficientemente entre ellas. | 1. El sistema debe permitir filtrar las reservas por fecha, ya sea seleccionando un día específico o un rango de fechas. 2. Las secciones que contienen muchas reservas deben tener paginación implementada, permitiendo navegar entre varias páginas de resultados de manera eficiente.             | X            |               |
+| **Historia 3**: Como dueña quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas para que pueda controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.         | 1. El precio pendiente debe mostrarse junto a cada reserva en la sección de Próximas Reservas, y debe actualizarse dinámicamente a medida que se realicen pagos. 2. Se debe permitir al administrador añadir, editar y eliminar servicios y adicionales desde una interfaz de gestión en el sistema. | X            |               |
+| **Historia 4**: Como dueña del negocio, quiero que el menú de precios en la landing page muestre automáticamente los servicios y extras desde la base de datos, adaptándose a los cambios, para garantizar información siempre actualizada.       | 1. Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras. 2. Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page.                                                                                 | X            |               |
+| **Historia 5**: Como administrador quiero poder observar las listas de reclamos de nuestros clientes para poder tener un mejor control de los reclamos posibles.                                                                                  | 1. La vista de los reclamos debe estar visible en todo momento y deben reflejarse de manera inmediata. 2. Se debe poder enviar correos de confirmación tanto al cliente como administrador.                                                                                                          | X            |               |
+
+## Salidas: Agreed Actionable Improvements
+
+| **Categoría**       | **Acción**                                                                                                                                                                                  | **Responsable**          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| **Empezar a hacer** | Mejorar la paginación en la sección de reservas para manejar mejor grandes volúmenes de datos.                                                                                              | Fernando, Alexia         |
+| **Seguir haciendo** | Ajustar la actualización dinámica del precio pendiente para asegurar que se refleje correctamente en Próximas Reservas al realizar pagos.                                                   | Daniel, Alexia           |
+| **Seguir haciendo** | Crear una interfaz de gestión de servicios y adicionales que permita a los administradores añadir, editar y eliminar servicios fácilmente.                                                  | Fernando, Alexia, Daniel |
+| **Seguir haciendo** | Realizar una revisión final de los filtros de reserva y los botones de acción (como el de "Finalizar") para garantizar que funcionen correctamente en todas las plataformas y dispositivos. | Fernando, Alexia         |
