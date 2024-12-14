@@ -1,34 +1,32 @@
 ---
-title: "Codificación "
-description: "Explicación detallada sobre la codificación de un proyecto para la gestión de citas, incluyendo la estructura de datos y la implementación de funcionalidades."
-heroImage: "../../assets/images/codificacion.jpg"  # Asegúrate de que la imagen exista en esta ruta.
-category: "Sprint 3"  # Asegúrate de que esta categoría esté permitida en el esquema.
+title: '14. Codificación'
+description: 'Explicación detallada sobre la codificación de un proyecto para la gestión de citas, incluyendo la estructura de datos y la implementación de funcionalidades.'
+heroImage: '../../assets/images/codificacion.jpg'
+category: 'Sprint 3'
 tags:
-  - "codificación"
-  - "Sprint 3"
-pubDate: "2024-12-12T00:00:00Z"  # Fecha en formato ISO 8601.
+  - 'codificación'
+  - 'Sprint 3'
+pubDate: '2024-12-01T00:00:00Z'
 ---
-# **Equipo XP:**
+
+# **Equipo XP**
 
 ## **Roles y Responsabilidades**
 
 - **Coach:** Marjorie  
-    Facilita la adopción de XP, guía al equipo en las mejores prácticas de desarrollo y asegura la mejora continua.
-  
+   Facilita la adopción de XP, guía al equipo en las mejores prácticas de desarrollo y asegura la mejora continua.
 - **Cliente:** Jhonny  
-    Define y prioriza las historias de usuario, da retroalimentación constante y valida entregas.
-  
+   Define y prioriza las historias de usuario, da retroalimentación constante y valida entregas.
 - **Programadores:** Fernando, Alexia, Daniel  
-    Escriben código, hacen refactorización, trabajan en pareja y aseguran la calidad del código.
-  
+   Escriben código, hacen refactorización, trabajan en pareja y aseguran la calidad del código.
 - **Encargado de Prueba:** Daniel  
-    Escribe pruebas unitarias, de integración y de aceptación antes de escribir el código.
+   Escribe pruebas unitarias, de integración y de aceptación antes de escribir el código.
 
 - **Encargado de Seguimiento (Tracker):** Marjorie  
-    Monitorea el progreso del equipo y asegura que el proyecto se mantenga en el camino correcto para cumplir con los objetivos.
+   Monitorea el progreso del equipo y asegura que el proyecto se mantenga en el camino correcto para cumplir con los objetivos.
 
 - **Consultor:** Arqque Pantigozo Antonio  
-    Miembro externo con conocimiento especializado para ayudar en problemas técnicos específicos del proyecto.
+   Miembro externo con conocimiento especializado para ayudar en problemas técnicos específicos del proyecto.
 
 ---
 
@@ -36,109 +34,71 @@ pubDate: "2024-12-12T00:00:00Z"  # Fecha en formato ISO 8601.
 
 ### **Historia de Usuario 1: HU01**
 
-#### Usuario: Lienzo Lima  
-**Nombre:** Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada", para poder gestionar las reservas pendientes y finalizadas de manera eficiente.
+![hu01](/images/hu01.PNG)
 
-- **Prioridad en Negocio:** Medio - Alto  
-- **Riesgo en Desarrollo:** Inconsistencias en el sistema si no se implementa correctamente.
-- **Puntos Estimados:** 5  
-- **Iteración Asignada:** Primera Iteración  
-- **Programadores Responsables:** Fernando - Alexia  
+#### **Tarea TH01-1**
 
-**Descripción:** Permite filtrar las reservas por estado y cambiar su estado a "finalizada" de manera eficiente.  
-**Observaciones:** Dependencia de la configuración adecuada de la base de datos.
+![th01.1](/images/th01.PNG)
 
----
+#### **Tarea TH01-2**
 
-#### **Tareas:**
-
-##### **Tarea TH01-1**  
-- **Nombre:** Añadir Filtro por pendiente o terminada en sección de reservas  
-- **Tipo de tarea:** Desarrollo  
-- **Puntos estimados:** 3  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Fernando  
-
-##### **Tarea TH01-2**  
-- **Nombre:** Añadir botón de "Finalizar" en la sección de Reservas  
-- **Tipo de tarea:** Desarrollo  
-- **Puntos estimados:** 5  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Alexia  
+![th01.2](/images/th01.2.PNG)
 
 ---
 
 ### **Historia de Usuario 2: HU02**
 
-#### Usuario: Lienzo Lima  
-**Nombre:** Como usuario que gestiona reservas quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas, para que pueda encontrar rápidamente las reservas por fecha y navegar eficientemente entre ellas.
+![hu02](/images/hu02.PNG)
 
-- **Prioridad en Negocio:** Alta  
-- **Riesgo en Desarrollo:** Errores en visualización de reservas o afectación en rendimiento.
-- **Puntos Estimados:** 5  
-- **Iteración Asignada:** Primera Iteración  
-- **Programador Responsable:** Daniel
+#### **Tarea TH02-1**
 
-**Descripción:** Permite filtrar reservas por fecha y navegar entre ellas utilizando paginación.  
-**Observaciones:** Dependencia de la correcta organización de las fechas en la base de datos.
+![th02](/images/th02.PNG)
 
----
+#### **Tarea TH02-2**
 
-#### **Tareas:**
-
-##### **Tarea TH02-1**  
-- **Nombre:** Añadir Filtro por día en la sección de reservas  
-- **Tipo de tarea:** Desarrollo  
-- **Puntos estimados:** 5  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Daniel  
-
-##### **Tarea TH02-2**  
-- **Nombre:** Añadir Paginación en cada sección que la necesite  
-- **Tipo de tarea:** Desarrollo  
-- **Puntos estimados:** 3  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Daniel  
+![th02.2](/images/th02.2.PNG)
 
 ---
 
 ### **Historia de Usuario 3: HU03**
 
-#### Usuario: Lienzo Lima  
-**Nombre:** Como dueña, quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas, para que pueda controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.
+![hu03](/images/hu03.PNG)
 
-- **Prioridad en Negocio:** Alta  
-- **Riesgo en Desarrollo:** Error en el cálculo del precio pendiente o en la gestión de servicios.
-- **Puntos Estimados:** 8  
-- **Iteración Asignada:** Sprint 3  
-- **Programador Responsable:** Fernando - Daniel  
+#### **Tarea TH03-1**
 
-**Descripción:** Permite gestionar servicios y adicionales y actualizar dinámicamente el precio pendiente por pagar en las reservas.  
-**Observaciones:** Requiere estructura adecuada de base de datos.
+![th03](/images/th03.PNG)
+
+#### **Tarea TH03-2**
+
+![th03.2](/images/th03.2.PNG)
 
 ---
 
-#### **Tareas:**
+### **Historia de Usuario 4: HU04**
 
-##### **Tarea TH03-1**  
-- **Nombre:** Agregar CRUD para los servicios y adicionales  
-- **Tipo de tarea:** Desarrollo  
-- **Puntos estimados:** 8  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Fernando  
+![hu04](/images/hu04.PNG)
 
-##### **Tarea TH03-2**  
-- **Nombre:** Agregar el precio que falta por pagar por cada reserva  
-- **Tipo de tarea:** Mejora  
-- **Puntos estimados:** 5  
-- **Fecha de inicio:** 22/11/2024  
-- **Fecha fin:** 06/12/2024  
-- **Programador responsable:** Daniel  
+#### **Tarea TH04-1**
+
+![th04](/images/th04.PNG)
+
+#### **Tarea TH04-2**
+
+![th04.2](/images/th04.2.PNG)
+
+---
+
+### **Historia de Usuario 5: HU05**
+
+![hu05](/images/hu05.PNG)
+
+#### **Tarea TH05-1**
+
+![th05](/images/th05.PNG)
+
+#### **Tarea TH05-2**
+
+![th05.2](/images/th05.2.PNG)
 
 ---
 
@@ -150,8 +110,8 @@ La **Integración Continua (CI)** implica la configuración de pipelines automat
 - Fomenta el desarrollo ágil y confiable al integrar cambios pequeños y frecuentes, reduciendo los conflictos de código.
 - Garantiza que el software esté siempre en un estado funcional.
 
-![Priorizado](../../assets/images/integracion1.jpg)
-![Priorizado](../../assets/images/integracion2.jpg)
+![Integración1](../../assets/images/integracion1.PNG)
+![Integración2](../../assets/images/integracion2.PNG)
 
 ## **Programación en Parejas**
 
@@ -162,5 +122,5 @@ La **programación en parejas** es una práctica clave dentro de XP. Esta técni
 
 Esto permite compartir conocimiento, mejorar la calidad del código y resolver problemas de manera más eficiente.
 
-![Priorizado](../../assets/images/pareja1.jpg)
-![Priorizado](../../assets/images/pareja2.jpg)
+![Pareja1](../../assets/images/pareja1.PNG)
+![Pareja2](../../assets/images/pareja2.PNG)

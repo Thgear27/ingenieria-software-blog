@@ -1,8 +1,8 @@
 ---
-title: '16. Demostrar y Validar el Sprint'
+title: '19. Demostrar y Validar el Sprint'
 description: >-
   En este documento se presenta la validación del sprint realizado, incluyendo las entradas, entregables, criterios de aceptación y resultados del equipo de Scrum.
-pubDate: 2024-10-24T20:00:00.000Z
+pubDate: 2024-12-01T20:00:00.000Z
 heroImage: ../../assets/images/sprint_review.jpg
 category: Sprint 3
 tags:
@@ -12,11 +12,12 @@ tags:
 ## ENTRADAS:
 
 ### Equipo Principal de Scrum:
+
 - **Scrum Master**: Luque Cardenas Marjorie
 - **Product Owner**: Tenorio Casiano Jhonny
 - **Equipo de Desarrollo**:
   - Vegas Villar Fernando
-  - Asuncion Pomansonco Alexia Nicol
+  - Asuncion Pomasonco Alexia Nicoll
   - Navarro Tantalean Daniel
 
 ### Entregables del Sprint:
@@ -24,24 +25,28 @@ tags:
 #### Historias de Usuario y Criterios de Aceptación:
 
 - **Historia 1**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para gestionar de manera eficiente las reservas pendientes y finalizadas.
+
   - **Criterios de Aceptación**:
     1. El sistema debe permitir filtrar las reservas por estado (pendiente/terminada) en la sección de reservas.
     2. El botón de "Finalizar" debe permitir cambiar el estado de una reserva de "pendiente" a "finalizada", y este cambio debe reflejarse correctamente en la base de datos.
 
 - **Historia 2**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas para que pueda encontrar rápidamente las reservas por fecha y navegar eficientemente entre ellas.
+
   - **Criterios de Aceptación**:
     1. El sistema debe permitir filtrar las reservas por fecha, ya sea seleccionando un día específico o un rango de fechas.
     2. Las secciones que contienen muchas reservas deben tener paginación implementada, permitiendo navegar entre varias páginas de resultados de manera eficiente.
 
 - **Historia 3**: Como dueña, quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas para poder controlar los servicios disponibles y hacer un seguimiento de los pagos pendientes.
+
   - **Criterios de Aceptación**:
     1. El precio pendiente debe mostrarse junto a cada reserva en la sección de Próximas Reservas, y debe actualizarse dinámicamente a medida que se realicen pagos.
     2. Se debe permitir al administrador añadir, editar y eliminar servicios y adicionales desde una interfaz de gestión en el sistema.
 
-- **Historia 4**: Como dueña, quiero poder editar el contenido de la landing page para actualizar fácilmente la información visible para los usuarios sin intervención técnica.
+- **Historia 4**: Como dueña del negocio, quiero que el menú de precios en la landing page muestre automáticamente los servicios y extras desde la base de datos, adaptándose a los cambios, para garantizar información siempre actualizada.
+
   - **Criterios de Aceptación**:
-    1. El sistema debe permitir editar el contenido de la landing page, incluyendo texto, imágenes y enlaces.
-    2. Los cambios realizados en la landing page deben reflejarse de inmediato en el sitio público sin necesidad de despliegue adicional.
+    1. Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras.
+    2. Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page.
 
 - **Historia 5**: Como administrador, quiero observar las listas de reclamos de nuestros clientes para tener un mejor control de los reclamos posibles.
   - **Criterios de Aceptación**:
@@ -50,18 +55,18 @@ tags:
 
 ## SPRINT BACKLOG:
 
-| HISTORIA | TAREA | ESFUERZO | RESPONSABLE | PRIORIDAD |
-|----------|-------|----------|-------------|-----------|
-| **Historia 1** | **Tarea 1.1**: Añadir Filtro por pendiente o terminada en sección de reservas | 3 | Fernando | Medio - Alta |
-| | **Tarea 1.2**: Añadir botón de "Finalizar" en la sección de Reservas | 5 | Alexia | Medio - Alta |
-| **Historia 2** | **Tarea 2.1**: Añadir Filtro por día en la sección de reservas | 5 | Daniel | Alta |
-| | **Tarea 2.2**: Añadir Paginación en cada sección que la necesite | 3 | Daniel | Alta |
-| **Historia 3** | **Tarea 3.1**: Agregar CRUD para los servicios y adicionales (Añadir, eliminar y editar servicios y adicionales) | 8 | Fernando | Alta |
-| | **Tarea 3.2**: Agregar el precio que falta por pagar por cada reserva en la sección de Próximas Reservas | 5 | Daniel | Alta |
-| **Historia 4** | **Tarea 4.1**: Agregar sección de "Landing" donde se pueda editar cosas puntuales del contenido del landing page | 8 | Alexia | Alta |
-| | **Tarea 4.2**: Agregar módulo para editar texto, imágenes y enlaces en la landing page | 13 | Fernando | Alta |
-| **Historia 5** | **Tarea 5.1**: Agregar sección donde se pueda visualizar los reclamos | 5 | Alexia | Media |
-| | **Tarea 5.2**: Notificar sobre el nuevo reclamo vía email al usuario y al administrador | 5 | Fernando | Media |
+| HISTORIA       | TAREA                                                                                                                                   | ESFUERZO | RESPONSABLE | PRIORIDAD    |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- | ------------ |
+| **Historia 1** | **Tarea 1.1**: Añadir Filtro por pendiente o terminada en sección de reservas                                                           | 3        | Fernando    | Medio - Alta |
+|                | **Tarea 1.2**: Añadir botón de "Finalizar" en la sección de Reservas                                                                    | 5        | Alexia      | Medio - Alta |
+| **Historia 2** | **Tarea 2.1**: Añadir Filtro por día en la sección de reservas                                                                          | 5        | Daniel      | Alta         |
+|                | **Tarea 2.2**: Añadir Paginación en cada sección que la necesite                                                                        | 3        | Daniel      | Alta         |
+| **Historia 3** | **Tarea 3.1**: Agregar CRUD para los servicios y adicionales (Añadir, eliminar y editar servicios y adicionales)                        | 8        | Fernando    | Alta         |
+|                | **Tarea 3.2**: Agregar el precio que falta por pagar por cada reserva en la sección de Próximas Reservas                                | 5        | Daniel      | Alta         |
+| **Historia 4** | **Tarea 4.1**: Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras | 8        | Alexia      | Alta         |
+|                | **Tarea 4.2**: Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page                                      | 13       | Fernando    | Alta         |
+| **Historia 5** | **Tarea 5.1**: Agregar sección donde se pueda visualizar los reclamos                                                                   | 5        | Alexia      | Media        |
+|                | **Tarea 5.2**: Notificar sobre el nuevo reclamo vía email al usuario y al administrador                                                 | 5        | Fernando    | Media        |
 
 ## CRITERIOS DE TERMINADO:
 
@@ -72,17 +77,18 @@ tags:
 
 ## REVISIÓN DE LAS HISTORIAS DE USUARIO Y CRITERIOS DE ACEPTACIÓN:
 
-| **Historia de Usuario** | **Criterios de Aceptación** | **Estado** |
-|-------------------------|----------------------------|------------|
-| **Historia 1**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para gestionar las reservas. | El sistema debe permitir filtrar las reservas por estado. El botón "Finalizar" debe cambiar el estado de una reserva de "pendiente" a "finalizada". | Aceptada |
-| **Historia 2**: Como usuario que gestiona reservas, quiero filtrar las reservas por fecha y tener paginación. | El sistema debe permitir filtrar por fecha. Las secciones con muchas reservas deben tener paginación implementada. | Aceptada |
-| **Historia 3**: Como dueña, quiero gestionar servicios y mostrar el precio pendiente en las reservas. | El precio pendiente debe mostrarse en "Próximas Reservas", y debe actualizarse con cada pago. El administrador debe poder gestionar servicios y adicionales. | Aceptada |
-| **Historia 4**: Como dueña, quiero poder editar el contenido de la landing page. | El sistema debe permitir editar el contenido de la landing page. Los cambios deben reflejarse inmediatamente sin necesidad de despliegue adicional. | Aceptada |
-| **Historia 5**: Como administrador, quiero observar las listas de reclamos. | La vista de los reclamos debe estar visible en todo momento. Se debe enviar correos de confirmación a cliente y administrador. | Aceptada |
+| **Historia de Usuario**                                                                                                                                                                                                                     | **Criterios de Aceptación**                                                                                                                                                                                    | **Estado** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **Historia 1**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada" para gestionar las reservas.                                                                            | El sistema debe permitir filtrar las reservas por estado. El botón "Finalizar" debe cambiar el estado de una reserva de "pendiente" a "finalizada".                                                            | Aceptada   |
+| **Historia 2**: Como usuario que gestiona reservas, quiero filtrar las reservas por fecha y tener paginación.                                                                                                                               | El sistema debe permitir filtrar por fecha. Las secciones con muchas reservas deben tener paginación implementada.                                                                                             | Aceptada   |
+| **Historia 3**: Como dueña, quiero gestionar servicios y mostrar el precio pendiente en las reservas.                                                                                                                                       | El precio pendiente debe mostrarse en "Próximas Reservas", y debe actualizarse con cada pago. El administrador debe poder gestionar servicios y adicionales.                                                   | Aceptada   |
+| **Historia 4**: Como dueña del negocio, quiero que el menú de precios en la landing page muestre automáticamente los servicios y extras desde la base de datos, adaptándose a los cambios, para garantizar información siempre actualizada. | Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras. Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page. | Aceptada   |
+| **Historia 5**: Como administrador, quiero observar las listas de reclamos.                                                                                                                                                                 | La vista de los reclamos debe estar visible en todo momento. Se debe enviar correos de confirmación a cliente y administrador.                                                                                 | Aceptada   |
 
 ## HERRAMIENTAS:
 
 ### REUNIÓN DE REVISIÓN DEL SPRINT:
+
 Revisión general de lo que se estuvo desarrollando, validación de funcionalidades, y aceptación de entregables.
 
 ![Priorizado](../../assets/images/post15.1.jpg)
@@ -91,10 +97,10 @@ Revisión general de lo que se estuvo desarrollando, validación de funcionalida
 
 ### ENTREGABLES ACEPTADOS:
 
-| **Historia de Usuario** | **Criterios de Aceptación** | **Aceptado** | **Rechazado** |
-|-------------------------|----------------------------|--------------|---------------|
-| **Historia 1**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada". | 1. El sistema debe permitir filtrar las reservas por estado (pendiente/terminada) en la sección de reservas. 2. El botón de "Finalizar" debe permitir cambiar el estado de una reserva de "pendiente" a "finalizada". | X | |
-| **Historia 2**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas. | 1. El sistema debe permitir filtrar las reservas por fecha, ya sea seleccionando un día específico o un rango de fechas. 2. Las secciones que contienen muchas reservas deben tener paginación implementada. | X | |
-| **Historia 3**: Como dueña, quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas. | 1. El precio pendiente debe mostrarse junto a cada reserva en la sección de Próximas Reservas, y debe actualizarse dinámicamente a medida que se realicen pagos. 2. Se debe permitir al administrador añadir, editar y eliminar servicios y adicionales. | X | |
-| **Historia 4**: Como dueña, quiero poder editar el contenido de la landing page. | 1. El sistema debe permitir editar el contenido de la landing page. 2. Los cambios realizados deben reflejarse de inmediato sin necesidad de despliegue adicional. | X | |
-| **Historia 5**: Como administrador, quiero observar las listas de reclamos. | 1. La vista de los reclamos debe estar visible en todo momento. 2. Se debe poder enviar correos de confirm
+| **Historia de Usuario**                                                                                                                                                                                                                     | **Criterios de Aceptación**                                                                                                                                                                                                                              | **Aceptado** | **Rechazado** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
+| **Historia 1**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por estado y cambiar su estado a "finalizada".                                                                                                        | 1. El sistema debe permitir filtrar las reservas por estado (pendiente/terminada) en la sección de reservas. 2. El botón de "Finalizar" debe permitir cambiar el estado de una reserva de "pendiente" a "finalizada".                                    | X            |               |
+| **Historia 2**: Como usuario que gestiona reservas, quiero poder filtrar las reservas por fecha y tener paginación en las secciones de reservas.                                                                                            | 1. El sistema debe permitir filtrar las reservas por fecha, ya sea seleccionando un día específico o un rango de fechas. 2. Las secciones que contienen muchas reservas deben tener paginación implementada.                                             | X            |               |
+| **Historia 3**: Como dueña, quiero poder gestionar los servicios y adicionales, y mostrar el precio pendiente por pagar en las reservas.                                                                                                    | 1. El precio pendiente debe mostrarse junto a cada reserva en la sección de Próximas Reservas, y debe actualizarse dinámicamente a medida que se realicen pagos. 2. Se debe permitir al administrador añadir, editar y eliminar servicios y adicionales. | X            |               |
+| **Historia 4**: Como dueña del negocio, quiero que el menú de precios en la landing page muestre automáticamente los servicios y extras desde la base de datos, adaptándose a los cambios, para garantizar información siempre actualizada. | 1. Modificar el layout del menú de precios para que se adapte automáticamente a una cantidad dinámica de servicios y extras. 2. Mostrar los servicios y extras leyéndolos desde la base de datos en el Landing Page.                                     | X            |               |
+| **Historia 5**: Como administrador, quiero observar las listas de reclamos.                                                                                                                                                                 | 1. La vista de los reclamos debe estar visible en todo momento. 2. Se debe poder enviar correos de confirm                                                                                                                                               |
